@@ -11,7 +11,7 @@ module.exports = (bot) =>
       const shuffleData = shuffleParser(match.input);
       const code = randomstring.generate(10);
       debug({ ...shuffleData, code })
-      await query('INSERT INTO shuffle (command, options, mode, code) VALUES ($1, $2, $3, $4)', [shuffleData.command, shuffleData.options, shuffleData.mode, code])
+      await query('INSERT INTO shuffle (command, options, mode, code, chat_id) VALUES ($1, $2, $3, $4, $5)', [shuffleData.command, shuffleData.options, shuffleData.mode, code, chatId])
       bot.sendMessage(chatId, `new shuffle created successfully, ask your follow shuffler to join you with typing /join ${code} in the bot chat.`);
     } catch (error) {
       console.error(error.message)

@@ -11,10 +11,10 @@ module.exports = (bot) =>
   /shuffle <b>mode</b> <b>options</b> - options to shuffle between your shuffle group.
   /show <b>shuffle ID</b> - show shuffle.
   /join <b>shuffle ID</b> - join a shuffle.
-  /exit - exit all shuffle.
+  /edit <b>shuffle ID</b> <b>options</b> - edit shuffle option.
 
   Usage:
-  /shuffle <b>fill/ignore/block</b> <b>citizen*10,killer*2</b>
+  /shuffle <b>fill/block</b> <b>citizen*10,killer*2</b>
           `,
       {
         parse_mode: "HTML",

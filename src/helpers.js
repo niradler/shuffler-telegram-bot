@@ -31,6 +31,17 @@ const shuffleParser = (input) => {
   return data;
 }
 
+const shuffleEditParser = (input) => {
+  const [command, code, options] = input.split(' ');
+  debug({ command, code, options });
+  let data = { command, code };
+
+  if (options) { data.options = getOptions(options); }
+  else { throw new Error('missing options.') }
+
+  return data;
+}
+
 const getPool = () => {
   if (!pool)
     pool = new Pool({
@@ -56,5 +67,6 @@ module.exports = {
   shuffle,
   debug,
   shuffleParser,
+  shuffleEditParser,
   getPool,
 };

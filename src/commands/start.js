@@ -8,7 +8,7 @@ module.exports = (bot) =>
         
   Available commands:
           
-  /shuffle <b>mode</b> <b>options</b> - options to shuffle between your shuffle group.
+  /shuffle <b>mode</b> <b>options</b> - create a shuffle that can be shared between your shuffle group.
   /show <b>shuffle ID</b> - show shuffle.
   /join <b>shuffle ID</b> - join a shuffle.
   /edit <b>shuffle ID</b> <b>options</b> - edit shuffle option.

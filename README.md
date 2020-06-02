@@ -1,5 +1,5 @@
-# DevResourcesBot
+# ShufflerBot
 
-code for the DevResources Telegram bot.
+code for the ShufflerBot Telegram bot.
 
-try it out @DevResources
+try it out @ShufflerBot
